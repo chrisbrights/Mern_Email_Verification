@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-jwt-auth",
+  "name": "mern_email_verification",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,8 +7,16 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.0",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "jwt-encode": "^1.0.1",
+    "mongoose": "^5.9.1",
+    "nodemailer": "^6.4.17",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -17,7 +25,7 @@
     "validator": "^13.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others \"node server/server.js\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
